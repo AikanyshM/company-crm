@@ -1,0 +1,13 @@
+<table>
+    <h1>Отделы</h1>
+    <tr>
+        <th>название отдела</th>
+        <th>Максимальное число сотрудников</th>
+    </tr>
+    <tr> 
+    {% for dep in departments %}
+        <td>{{ dep.name}}</td>
+        <td>{{ dep.max_employees }}</td>
+    </tr>
+    {% endfor %}
+</table>

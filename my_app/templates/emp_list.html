@@ -1,0 +1,19 @@
+<table>
+    <h1>Сотрудники</h1>
+    <tr>
+        <th>ФИО сотрудника</th>
+        <th>Адрес проживания</th>
+        <th>Дата рождения</th>
+        <th>Должность</th>
+        <th>Статус сотрудника</th>
+    </tr>
+    <tr> 
+    {% for emp in employees %}
+        <td>{{ emp.first_last_name}}</td>
+        <td>{{ emp.address }}</td>
+        <td>{{ emp.birthdate }}</td>
+        <td>{{ emp.position }}</td>
+        <td>{{ emp.status }}</td>
+    </tr>
+    {% endfor %}
+</table>
